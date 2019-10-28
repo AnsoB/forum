@@ -1,0 +1,37 @@
+print("Hello user, this program converts kilometers into miles.")
+
+while True:
+    print("Please enter the number of kilometers you wish to convert into miles: ")
+    km = float(input("Kilometers: "))
+    conversion_factor = 0.621371
+    miles = km * conversion_factor
+    print(miles)
+
+    choice = input("Would you like to do another conversion? Yes or No?: ")
+    yes = "Yes I would like to do another conversion."
+    no = "No, I don't want to do another conversion."
+    if choice == "yes":
+        print("Please enter the number of kilometers you wish to convert into miles: ")
+        print(miles)
+    elif choice == "No":
+        print("Okay.Thanks, goodbye.")
+        break
+
+
+
+
+print("Hello, this is a game called 'fizzbuzz'.")
+num = int(input("please enter a number (between 1 and 40): "))
+
+for num in range(num + 1):
+    if num % 3 == 0 and num % 5 == 0:
+        print("fizzbuzz")
+    elif num % 3 == 0:
+        print("fizz")
+    elif num % 5 == 0:
+        print("buzz")
+    else:
+        print(num)
+
+
+
